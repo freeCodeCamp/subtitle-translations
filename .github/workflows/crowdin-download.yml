@@ -174,7 +174,7 @@ jobs:
           git push -u origin i18n-sync-curriculum -f
       # Generate PR - all languages should go ABOVE this. #
       - name: Create PR
-        uses: ./tools/crowdin/actions/pr-creator
+        uses: ./tools/actions/pr-creator
         with:
           github-token: ${{ secrets.CROWDIN_CAMPERBOT_PAT }}
           branch: 'i18n-sync-subtitles'

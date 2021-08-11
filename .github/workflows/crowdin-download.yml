@@ -19,7 +19,6 @@ jobs:
       - name: Install Dependencies
         working-directory: ./tools
         run: |
-          cd ./crowdin
           npm ci
       ##### Download Chinese #####
       - name: Crowdin Download Chinese Translations

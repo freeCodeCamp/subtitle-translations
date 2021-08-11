@@ -178,10 +178,10 @@ jobs:
         uses: ./tools/crowdin/actions/pr-creator
         with:
           github-token: ${{ secrets.CROWDIN_CAMPERBOT_PAT }}
-          branch: 'i18n-sync-curriculum'
-          owner-repo: 'freeCodeCamp/freeCodeCamp'
+          branch: 'i18n-sync-subtitles'
+          owner-repo: 'nhcarrigan/subtitle-translations'
           base: 'main'
-          title: 'chore(i18n,curriculum): processed translations'
+          title: 'chore(i18n): processed translations'
           body: 'This PR was opened auto-magically by Crowdin.'
           labels: 'crowdin-sync'
-          team_reviewers: 'i18n'
+#          team_reviewers: 'i18n'

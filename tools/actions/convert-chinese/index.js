@@ -1,7 +1,7 @@
 /* eslint-disable import/no-unresolved */
-const path = require('path');
-const fs = require('fs-extra');
-const opencc = require('node-opencc');
+const path = require("path");
+const fs = require("fs-extra");
+const opencc = require("node-opencc");
 
 const getFiles = async (directory, fileList = []) => {
   const files = await fs.readdir(directory);
@@ -17,24 +17,17 @@ const getFiles = async (directory, fileList = []) => {
 };
 
 (async () => {
-  console.info('Getting file list...');
+  console.info("Getting file list...");
   const fileList = [];
-  const curriculum = await getFiles(
-    path.join(__dirname, '/../../../../curriculum/challenges/chinese')
-  );
-  fileList.push(...curriculum);
-
-  const client = await getFiles(
-    path.join(__dirname, '/../../../../client/i18n/locales/chinese')
-  );
-  fileList.push(...client);
+  const subtitles = await getFiles(path.join(__dirname, "/subtitles/chinese"));
+  fileList.push(...subtitles);
 
   for (const file of fileList) {
     console.info(`Translating ${file}`);
-    const fileText = await fs.readFile(file, 'utf-8');
+    const fileText = await fs.readFile(file, "utf-8");
     const translatedText = await opencc.simplifiedToTraditional(fileText);
     await fs.outputFile(
-      file.replace('chinese', 'chinese-traditional'),
+      file.replace("chinese", "chinese-traditional"),
       translatedText
     );
   }

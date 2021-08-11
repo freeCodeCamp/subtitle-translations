@@ -166,7 +166,7 @@ jobs:
         env:
           EMAIL: ${{ secrets.ACTIONS_CAMPERBOT_EMAIL }}
         run: |
-          git checkout -b i18n-sync-curriculum
+          git checkout -b i18n-sync-subtitles
           git config --global user.name "camperbot"
           git config --global user.email "$EMAIL"
           git add .

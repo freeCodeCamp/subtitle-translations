@@ -43,7 +43,7 @@ jobs:
           create_pull_request: false
 
           # global options
-          config: './config/crowdin/curriculum/crowdin.yml'
+          config: './config/crowdin.yml'
           base_url: ${{ secrets.CROWDIN_BASE_URL_FCC }}
 
           # Uncomment below to debug

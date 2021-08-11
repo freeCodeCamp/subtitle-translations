@@ -19,7 +19,7 @@ const getFiles = async (directory, fileList = []) => {
 (async () => {
   console.info("Getting file list...");
   const fileList = [];
-  const subtitles = await getFiles(path.join(__dirname, "/subtitles/chinese"));
+  const subtitles = await getFiles(path.join(__dirname, "/subtitles/Chinese Simplified"));
   fileList.push(...subtitles);
 
   for (const file of fileList) {
@@ -27,7 +27,7 @@ const getFiles = async (directory, fileList = []) => {
     const fileText = await fs.readFile(file, "utf-8");
     const translatedText = await opencc.simplifiedToTraditional(fileText);
     await fs.outputFile(
-      file.replace("chinese", "chinese-traditional"),
+      file.replace("Chinese Simplified", "Chinese Traditional"),
       translatedText
     );
   }

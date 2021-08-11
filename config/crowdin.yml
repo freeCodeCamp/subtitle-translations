@@ -9,6 +9,6 @@ files:
   [
     {
       "source": "/subtitles/english/**/*.srt",
-      "translation": "/subtitles/%language%/**/original_file_name%",
+      "translation": "/subtitles/%language%/**/%original_file_name%",
     },
   ]

@@ -19,7 +19,7 @@ const getFiles = async (directory, fileList = []) => {
 (async () => {
   console.info("Getting file list...");
   const fileList = [];
-  const subtitles = await getFiles(path.join(__dirname, "/subtitles/Chinese Simplified"));
+  const subtitles = await getFiles(path.join(__dirname, "../../../subtitles/Chinese Simplified"));
   fileList.push(...subtitles);
 
   for (const file of fileList) {

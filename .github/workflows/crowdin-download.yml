@@ -57,7 +57,7 @@ jobs:
 
       # Convert Simplified Chinese to Traditional #
       - name: Generate Translations
-        uses: ./tools/crowdin/actions/convert-chinese
+        uses: ./tools/actions/convert-chinese
 
       # ##### Download Espanol #####
       # - name: Crowdin Download Espanol Translations

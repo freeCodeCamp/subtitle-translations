@@ -20,15 +20,15 @@ Translations, when completed on Crowdin, will download to the respective languag
 - 在社区中结识优秀的小伙伴，拥抱更多技术成长与职业发展的可能性
 
 ### 协作流程
-- 根据[翻译指南]()，在 [Crowdin]() 注册账号，点击项目面板（Workspace）中的字幕（subtitles）项目，选择字幕文件，开始翻译。
-- 在翻译过程中如遇到任何问题，或有任何建议，可根据[翻译指南]()在 Crowdin 中留言（@miyaliu），或在[论坛]()发帖反馈。
+- 根据[翻译指南](https://contribute.freecodecamp.org/#/i18n/chinese/how-to-translate-files)，在 [Crowdin](https://freecodecamp.crowdin.com/u/projects/19/l/zh-CN) 注册账号，点击项目面板（Workspace）中的字幕（subtitles）项目，选择字幕文件，开始翻译。
+- 在翻译过程中如遇到任何问题，或有任何建议，可根据[翻译指南](https://contribute.freecodecamp.org/#/i18n/chinese/how-to-translate-files)在 Crowdin 中留言（@miyaliu），或在[论坛](https://chinese.freecodecamp.org/forum/)发帖反馈。
 - 校对贡献者们将会在 Crowdin 上及时校对你的译文，请耐心等待。
 - 翻译且校对完毕的译文，我们将及时下载，并上传到 bilibili 和 YouTube。
 
 **请注意，字幕中的时间轴已被设置为隐藏字符串，不可修改，我们将在下载译文时一并下载时间轴，并在上传时进行调整。**
 
 ### 翻译原则
-结合之前的经验，我们简要总结翻译原则如下（欢迎在[论坛]()提出优化建议）：
+结合之前的经验，我们简要总结翻译原则如下（欢迎在[论坛](https://chinese.freecodecamp.org/forum/)提出优化建议）：
 
 - 中文表达尽量做到自然、流畅。
 - 句末不需要标点符号。
@@ -36,5 +36,5 @@ Translations, when completed on Crowdin, will download to the respective languag
 - 不需要使用敬语，比如，“you” 应该翻译为“你”，而不是“您”。
 - 全角、半角字符之间（比如，中英文之间）留一个空格。
 - 灵活调整语序，比如，英语里的 if 条件状语从句有时候是放在后部分，而中文翻译为“如果......”的时候，则需要放在前部分。
-- 特别提醒没有技术背景的译者，当你遇到一些单词，拿不定主意，也许它是一个专业术语（比如，variable 变量，function 函数），这时候你可以直接在[论坛]()发帖讨论。
+- 特别提醒没有技术背景的译者，当你遇到一些单词，拿不定主意，也许它是一个专业术语（比如，variable 变量，function 函数），这时候你可以直接在[论坛](https://chinese.freecodecamp.org/forum/)发帖讨论。
 - 我们没有 deadline，请结合你自己的实际情况合理安排翻译时间，希望你享受协作的过程。

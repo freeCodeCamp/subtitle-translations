@@ -1,9 +1,9 @@
 name: Crowdin Subtitle Download
 on:
   workflow_dispatch:
-  #schedule:
+  schedule:
     # runs every day at 12:30 PM UTC
-    #- cron: '30 12 * * *'
+    - cron: '30 12 * * *'
 
 jobs:
   i18n-download-curriculum-translations:

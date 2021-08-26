@@ -1,0 +1,26 @@
+1
+00:00:00,259 --> 00:00:02,069
+- [nhcarrigan] This file is a
+
+2
+00:00:02,069 --> 00:00:02,902
+demonstration of the way that
+
+3
+00:00:02,902 --> 00:00:05,399
+subtitle translations work
+on crowdin.
+
+4
+00:00:05,399 --> 00:00:09,566
+You can make translations to this file.
+
+5
+00:00:10,911 --> 00:00:12,217
+This will give you a chance to
+
+6
+00:00:12,217 --> 00:00:14,580
+practice what the translation flow
+feels like.
+

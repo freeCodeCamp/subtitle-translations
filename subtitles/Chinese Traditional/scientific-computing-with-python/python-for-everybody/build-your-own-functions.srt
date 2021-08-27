@@ -936,183 +936,171 @@ return 語句
 
 235
 00:09:14,389 --> 00:09:17,306
-that says that this bit right here,
+也就是說這裏這個部分
 
 236
 00:09:19,622 --> 00:09:21,308
-is now hola.
+會變成 Hola
 
 237
 00:09:21,308 --> 00:09:22,600
-So Hola Sally.
+也就是 Hola Sally
 
 238
 00:09:22,600 --> 00:09:25,166
-And the same with French,
-goes in, runs again,
+法語也是一樣，獲取參數然後執行
 
 239
 00:09:25,166 --> 00:09:28,817
-out comes the return statement,
-and then Bonjour Michael.
+返回一個 return 語句，也就是 Bonjour Michael
 
 240
 00:09:28,817 --> 00:09:31,040
-So you see how we can control
+那麼現在應該能明白如何去控制
 
 241
 00:09:31,040 --> 00:09:33,194
-as we're writing the application,
+我們在寫這段程序的時候
 
 242
 00:09:33,194 --> 00:09:35,704
-we can control as we're
-writing the function
+就可以通過寫函數來控制程序
 
 243
 00:09:35,704 --> 00:09:38,820
-what the residual value
-that we want to see
+來得到我們想要的輸出
 
 244
 00:09:38,820 --> 00:09:40,975
-in whatever expression is calling us.
+以及調用的形式
 
 245
 00:09:40,975 --> 00:09:42,032
-Sometimes we have returns
+有時候有返回
 
 246
 00:09:42,032 --> 00:09:44,786
-and sometimes we don't have returns.
+有時候沒有
 
 247
 00:09:44,786 --> 00:09:45,619
-So,
+所以
 
 248
 00:09:48,728 --> 00:09:51,439
-so if you think of the max code
-that we talked about before,
+我們回到之前討論過的這個 max 函數
 
 249
 00:09:51,439 --> 00:09:53,897
-we can kind of see that
-somewhere inside that max code
+可以看到這裏面的這段代碼
 
 250
 00:09:53,897 --> 00:09:54,925
-there's a return,
+有一個返回值
 
 251
 00:09:54,925 --> 00:09:57,789
-and that's how it
-communicates the w back to us.
+這也是函數如何將 w 返回給主程序
 
 252
 00:09:57,789 --> 00:09:59,931
-So we pass in this argument Hello World,
+我們傳入一個 Hello World 的參數
 
 253
 00:09:59,931 --> 00:10:01,638
-it comes in as a parameter
+被函數作爲參數接收
 
 254
 00:10:01,638 --> 00:10:04,920
-and it's gonna loop
-through this imp somewhere,
+然後如果滿足條件則進入 for 循環
 
 255
 00:10:04,920 --> 00:10:06,892
-it's gonna loop over and over into imp,
+然後一直循環
 
 256
 00:10:06,892 --> 00:10:08,912
-and then at some point it's
-gonna figure something out,
+直到某個點得到結果
 
 257
 00:10:08,912 --> 00:10:11,687
-and tell us what it
-wants to send back to us,
+函數告訴我們要返回一個值
 
 258
 00:10:11,687 --> 00:10:14,545
-is a return statement,
-and so the w comes back
+也就是 return 語句，這裏就返回了 w
 
 259
 00:10:14,545 --> 00:10:16,795
-and gets assigned into big.
+然後被賦值給 big
 
 260
 00:10:19,108 --> 00:10:21,078
-You can have more than one parameter,
+你可以傳遞多個參數
 
 261
 00:10:21,078 --> 00:10:22,519
-and they're just in order,
+只要按順序傳遞
 
 262
 00:10:22,519 --> 00:10:24,044
-the first one and the second one,
+第一個，第二個
 
 263
 00:10:24,044 --> 00:10:24,877
-three and five,
+分別是 3 和 5
 
 264
 00:10:24,877 --> 00:10:27,539
-so three becomes a and five becomes b,
+所以 3 被傳遞給 a，5 被傳遞給 b
 
 265
 00:10:27,539 --> 00:10:28,811
-and away we go.
+然後
 
 266
 00:10:28,811 --> 00:10:30,811
-So we just use this to add two numbers
+我們這個函數只是用於將兩個數相加
 
 267
 00:10:30,811 --> 00:10:33,478
-and so three plus five is eight.
+所以 3 + 5 = 8
 
 268
 00:10:35,664 --> 00:10:37,332
-So you can add as many as you like,
+你可以將任意兩個數相加
 
 269
 00:10:37,332 --> 00:10:38,388
-and the order matters,
+記住參數傳遞的順序是重要的
 
 270
 00:10:38,388 --> 00:10:40,035
-and if you do things like,
+然後如果你定義了一個
 
 271
 00:10:40,035 --> 00:10:41,660
-you tell it you want parameters
+需要參數的函數
 
 272
 00:10:41,660 --> 00:10:42,778
-and you don't give it to them,
+但是調用的時候並不傳遞參數
 
 273
 00:10:42,778 --> 00:10:44,597
-then that'll become a traceback.
+那函數就會回溯
 
 274
 00:10:44,597 --> 00:10:45,816
-And it'll blow up.
+然後出錯
 
 275
 00:10:45,816 --> 00:10:47,584
-You could also talk about
-optional parameters,
+當然也有可選的參數
 
 276
 00:10:47,584 --> 00:10:49,076
-if, later.
+我們之後再講
 
 277
 00:10:49,076 --> 00:10:51,177

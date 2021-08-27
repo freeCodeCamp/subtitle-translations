@@ -936,183 +936,171 @@ return 语句
 
 235
 00:09:14,389 --> 00:09:17,306
-that says that this bit right here,
+也就是说这里这个部分
 
 236
 00:09:19,622 --> 00:09:21,308
-is now hola.
+会变成 Hola
 
 237
 00:09:21,308 --> 00:09:22,600
-So Hola Sally.
+也就是 Hola Sally
 
 238
 00:09:22,600 --> 00:09:25,166
-And the same with French,
-goes in, runs again,
+法语也是一样，获取参数然后执行
 
 239
 00:09:25,166 --> 00:09:28,817
-out comes the return statement,
-and then Bonjour Michael.
+返回一个 return 语句，也就是 Bonjour Michael
 
 240
 00:09:28,817 --> 00:09:31,040
-So you see how we can control
+那么现在应该能明白如何去控制
 
 241
 00:09:31,040 --> 00:09:33,194
-as we're writing the application,
+我们在写这段程序的时候
 
 242
 00:09:33,194 --> 00:09:35,704
-we can control as we're
-writing the function
+就可以通过写函数来控制程序
 
 243
 00:09:35,704 --> 00:09:38,820
-what the residual value
-that we want to see
+来得到我们想要的输出
 
 244
 00:09:38,820 --> 00:09:40,975
-in whatever expression is calling us.
+以及调用的形式
 
 245
 00:09:40,975 --> 00:09:42,032
-Sometimes we have returns
+有时候有返回
 
 246
 00:09:42,032 --> 00:09:44,786
-and sometimes we don't have returns.
+有时候没有
 
 247
 00:09:44,786 --> 00:09:45,619
-So,
+所以
 
 248
 00:09:48,728 --> 00:09:51,439
-so if you think of the max code
-that we talked about before,
+我们回到之前讨论过的这个 max 函数
 
 249
 00:09:51,439 --> 00:09:53,897
-we can kind of see that
-somewhere inside that max code
+可以看到这里面的这段代码
 
 250
 00:09:53,897 --> 00:09:54,925
-there's a return,
+有一个返回值
 
 251
 00:09:54,925 --> 00:09:57,789
-and that's how it
-communicates the w back to us.
+这也是函数如何将 w 返回给主程序
 
 252
 00:09:57,789 --> 00:09:59,931
-So we pass in this argument Hello World,
+我们传入一个 Hello World 的参数
 
 253
 00:09:59,931 --> 00:10:01,638
-it comes in as a parameter
+被函数作为参数接收
 
 254
 00:10:01,638 --> 00:10:04,920
-and it's gonna loop
-through this imp somewhere,
+然后如果满足条件则进入 for 循环
 
 255
 00:10:04,920 --> 00:10:06,892
-it's gonna loop over and over into imp,
+然后一直循环
 
 256
 00:10:06,892 --> 00:10:08,912
-and then at some point it's
-gonna figure something out,
+直到某个点得到结果
 
 257
 00:10:08,912 --> 00:10:11,687
-and tell us what it
-wants to send back to us,
+函数告诉我们要返回一个值
 
 258
 00:10:11,687 --> 00:10:14,545
-is a return statement,
-and so the w comes back
+也就是 return 语句，这里就返回了 w
 
 259
 00:10:14,545 --> 00:10:16,795
-and gets assigned into big.
+然后被赋值给 big
 
 260
 00:10:19,108 --> 00:10:21,078
-You can have more than one parameter,
+你可以传递多个参数
 
 261
 00:10:21,078 --> 00:10:22,519
-and they're just in order,
+只要按顺序传递
 
 262
 00:10:22,519 --> 00:10:24,044
-the first one and the second one,
+第一个，第二个
 
 263
 00:10:24,044 --> 00:10:24,877
-three and five,
+分别是 3 和 5
 
 264
 00:10:24,877 --> 00:10:27,539
-so three becomes a and five becomes b,
+所以 3 被传递给 a，5 被传递给 b
 
 265
 00:10:27,539 --> 00:10:28,811
-and away we go.
+然后
 
 266
 00:10:28,811 --> 00:10:30,811
-So we just use this to add two numbers
+我们这个函数只是用于将两个数相加
 
 267
 00:10:30,811 --> 00:10:33,478
-and so three plus five is eight.
+所以 3 + 5 = 8
 
 268
 00:10:35,664 --> 00:10:37,332
-So you can add as many as you like,
+你可以将任意两个数相加
 
 269
 00:10:37,332 --> 00:10:38,388
-and the order matters,
+记住参数传递的顺序是重要的
 
 270
 00:10:38,388 --> 00:10:40,035
-and if you do things like,
+然后如果你定义了一个
 
 271
 00:10:40,035 --> 00:10:41,660
-you tell it you want parameters
+需要参数的函数
 
 272
 00:10:41,660 --> 00:10:42,778
-and you don't give it to them,
+但是调用的时候并不传递参数
 
 273
 00:10:42,778 --> 00:10:44,597
-then that'll become a traceback.
+那函数就会回溯
 
 274
 00:10:44,597 --> 00:10:45,816
-And it'll blow up.
+然后出错
 
 275
 00:10:45,816 --> 00:10:47,584
-You could also talk about
-optional parameters,
+当然也有可选的参数
 
 276
 00:10:47,584 --> 00:10:49,076
-if, later.
+我们之后再讲
 
 277
 00:10:49,076 --> 00:10:51,177

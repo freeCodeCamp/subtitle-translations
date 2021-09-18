@@ -1,449 +1,402 @@
 1
 00:00:00,857 --> 00:00:02,328
-- So now we're going to start learning
+現在我們將開始學習
 
 2
 00:00:02,328 --> 00:00:05,367
-the actual Python language.
+實際的 Python 語言
 
 3
 00:00:05,367 --> 00:00:07,257
-What do we say?
+我們之前說了什麼
 
 4
 00:00:07,257 --> 00:00:09,410
-You can think of this
-as almost like writing,
+你幾乎可以把它當成寫作
 
 5
 00:00:09,410 --> 00:00:11,767
-almost like writing a story.
+幾乎就像寫一個故事
 
 6
 00:00:11,767 --> 00:00:13,733
-We're going to start
-with a basic vocabulary.
+我們將從基本詞彙開始
 
 7
 00:00:13,733 --> 00:00:17,072
-We're going to talk a little
-bit about lines or sentences.
+我們要聊一小段行或者叫語句
 
 8
 00:00:17,072 --> 00:00:18,788
-Then we're going to
-start talking about how
+然後我們就要開始談論如何
 
 9
 00:00:18,788 --> 00:00:20,860
-to put those sentences together
+組織這些語句
 
 10
 00:00:20,860 --> 00:00:25,026
-to make a coherent paragraph, as it were.
+形成連貫的段落，像這樣
 
 11
 00:00:25,026 --> 00:00:27,648
-You just have to accept
-the fact that when I start
+你只需要接受這麼個事實，當我開始
 
 12
 00:00:27,648 --> 00:00:30,662
-teaching you this stuff,
-it's not going to make sense
+教你這個東西，再教七八個章節
 
 13
 00:00:30,662 --> 00:00:33,861
-for about six or seven more chapters.
+也沒有意義
 
 14
 00:00:33,861 --> 00:00:36,278
-So just sort of bear with me.
+所以請忍耐一下
 
 15
 00:00:37,661 --> 00:00:40,834
-I remember when I first
-learned, it went from me,
+記得我第一次學，對我來說是：
 
 16
 00:00:40,834 --> 00:00:43,874
-confused, confused,
-confused, confused, confused.
+迷惑，迷惑，迷惑，迷惑，迷惑
 
 17
 00:00:43,874 --> 00:00:46,422
-Holy mackerel, this is awesome.
+哇噻，妙啊
 
 18
 00:00:46,422 --> 00:00:49,378
-I expect many of you will
-go through that same thing.
+我猜你們中很多人都會有相同的體驗
 
 19
 00:00:49,378 --> 00:00:52,361
-Just learn the first
-parts, accept the fact
+只需學習先前部分，接受
 
 20
 00:00:52,361 --> 00:00:56,528
-that it doesn't necessarily
-make sense in a big picture.
+從大的方面來看不一定有意義的現實
 
 21
 00:00:57,928 --> 00:01:00,019
-Just bear with us, okay?
+請忍耐一下我們好嗎
 
 22
 00:01:00,019 --> 00:01:01,349
-So we'll start with
-vocabulary, we'll start
+所以我們將從詞彙開始。我們將開始
 
 23
 00:01:01,349 --> 00:01:03,234
-to make sentences, then we'll have
+造句，然後我們會有
 
 24
 00:01:03,234 --> 00:01:06,522
-little short stories and paragraphs.
+短故事和段落
 
 25
 00:01:06,522 --> 00:01:08,620
-This is a short story about how
+這是一個關於
 
 26
 00:01:08,620 --> 00:01:10,915
-to count the words in Python.
+如何用 Python 數單詞數的小故事
 
 27
 00:01:10,915 --> 00:01:13,453
-It's got a couple of
-paragraphs, and we are going
+它有好幾個段落，我們最終
 
 28
 00:01:13,453 --> 00:01:16,564
-to look at all of this stuff eventually.
+要過遍所有的東西
 
 29
 00:01:16,564 --> 00:01:20,069
-We start with a set of reserved words.
+我們從一組保留詞開始
 
 30
 00:01:20,069 --> 00:01:21,998
-What are reserved words?
+什麼是保留詞
 
 31
 00:01:21,998 --> 00:01:26,165
-They're words that Python
-expects when you use these words,
+它們是 Python 希望當你使用這些詞的時候
 
 32
 00:01:27,802 --> 00:01:28,806
-that they're going to mean exactly
+它們正好是
 
 33
 00:01:28,806 --> 00:01:30,709
-what Python expects them to mean.
+Python 希望的意思的詞
 
 34
 00:01:30,709 --> 00:01:32,812
-What it really means is
-you're not allowed to use them
+它真實的意義是不允許把這些詞
 
 35
 00:01:32,812 --> 00:01:35,275
-for any other purpose than
-the purpose that Python wants.
+用作他用，而只能作 Python 希望的意思用
 
 36
 00:01:35,275 --> 00:01:37,295
-It's part of the contract.
+這是約定的一部分
 
 37
 00:01:37,295 --> 00:01:41,115
-It's like when you have a dog, and you go,
+就像你養狗時，你對它說
 
 38
 00:01:41,115 --> 00:01:44,409
-what did you think of
-that television program?
+你覺得這電視節目怎麼樣
 
 39
 00:01:44,409 --> 00:01:47,756
-The dog has no idea what you're
-saying, and then you say,
+狗一點都不懂你在說什麼，然後你又說
 
 40
 00:01:47,756 --> 00:01:50,067
-do you want to wait until Saturday
+你要等到週六
 
 41
 00:01:50,067 --> 00:01:52,234
-to go to the veterinarian?
+纔去看獸醫嗎
 
 42
 00:01:54,483 --> 00:01:55,933
-And the dog still doesn't
-know what you're saying,
+狗還是不懂你在說什麼
 
 43
 00:01:55,933 --> 00:01:59,064
-and you go like, how would
-you like to take a walk?
+然後你又說你覺得出去散步怎麼樣
 
 44
 00:01:59,064 --> 00:02:00,373
-And then the dog goes, walk,
+然後狗準備出去散步了
 
 45
 00:02:00,373 --> 00:02:04,191
-I know what that means,
-and then hits the door.
+“我知道是什麼意思”，然後開始撞門
 
 46
 00:02:04,191 --> 00:02:06,493
-The way the dog sees you is
-blah, blah, blah, blah, walk,
+在狗看來你說的是“@¥%#@%@ 散步”
 
 47
 00:02:06,493 --> 00:02:09,493
-blah, blah, blah, food,
-blah, blah, blah, treat,
+“@#%%#@ 食物”，“@#%#@¥ 獎勵”
 
 48
 00:02:09,493 --> 00:02:11,395
-blah, blah, blah, walk.
+“#@%@#%# 散步”
 
 49
 00:02:11,395 --> 00:02:14,236
-That's kind of how Python
-looks at these reserved words.
+這有點像 Python 處理保留詞的方式
 
 50
 00:02:14,236 --> 00:02:15,840
-When you say class, it goes class,
+當你說 class ，它就會這樣反應
 
 51
 00:02:15,840 --> 00:02:17,465
-oh I know what that means.
+“class，我知道 class 什麼意思”
 
 52
 00:02:17,465 --> 00:02:20,962
-Now if I say zap, it's
-like oh, was zap something
+現在，如果我說 zap，它就會想：哦，zap 是
 
 53
 00:02:20,962 --> 00:02:24,187
-that you get to decide, or
-maybe it's a variable name.
+你決定的什麼東西，或者是一個變量名
 
 54
 00:02:24,187 --> 00:02:27,468
-So reserved words are simply
-words that when you use
+所以保留詞就是你在 Python 中
 
 55
 00:02:27,468 --> 00:02:30,822
-these words in Python, and
-there's only a few of them,
+用到的詞，並且它們只有一小部分
 
 56
 00:02:30,822 --> 00:02:34,655
-like and or del or if,
-maybe, pass, maybe, in.
+比如 and del if，或者 pass in
 
 57
 00:02:39,234 --> 00:02:41,579
-Lot of these you won't end up using them,
+大部分你最終都不會用上
 
 58
 00:02:41,579 --> 00:02:43,718
-it's just these are reserved for Python
+它是爲 Python 保留的
 
 59
 00:02:43,718 --> 00:02:45,784
-and part of the Python vocabulary.
+是 Python 詞彙的一部分
 
 60
 00:02:45,784 --> 00:02:47,951
-This is Python vocabulary.
+這是 Python 的詞彙
 
 61
 00:02:49,046 --> 00:02:52,153
-When we move from words to sentences,
+當我們從詞語來到句子
 
 62
 00:02:52,153 --> 00:02:54,583
-you see that Python has a series of lines.
+你可以看到 Python 有許多行
 
 63
 00:02:54,583 --> 00:02:57,233
-A Python program is a
-series of statements.
+Python 程序是一系列語句
 
 64
 00:02:57,233 --> 00:02:59,179
-They have an order because the computer
+它們有順序，因爲計算機
 
 65
 00:02:59,179 --> 00:03:02,076
-wants to know what next,
-what next, what next.
+需要知道下一步是什麼，再下一步又是什麼
 
 66
 00:03:02,076 --> 00:03:05,066
-What next is start at the beginning.
+下一步做什麼的指令從開頭就開始
 
 67
 00:03:05,066 --> 00:03:07,098
-I already talked about
-an assignment statement
+我已經討論過了賦值語句
 
 68
 00:03:07,098 --> 00:03:09,360
-that basically says x = 2.
+基本上就是說 x = 2
 
 69
 00:03:09,360 --> 00:03:10,910
-This is not a mathematical statement.
+這不是一個數學證明
 
 70
 00:03:10,910 --> 00:03:15,011
-This is a directive to say,
-take this variable two,
+這是一個指令，意思是把這個變量設爲 2
 
 71
 00:03:15,011 --> 00:03:16,880
-this value two, this constant two,
+這個值 2，這個常量 2
 
 72
 00:03:16,880 --> 00:03:19,487
-and stick it in a location in your memory,
+並將其置於內存中的某個位置
 
 73
 00:03:19,487 --> 00:03:22,267
-and remember that I
-asked you to name it x.
+並記住，我要求你給它命名爲 x
 
 74
 00:03:22,267 --> 00:03:24,660
-X is a variable, something you made up.
+x 是一個變量，你創造了它
 
 75
 00:03:24,660 --> 00:03:29,013
-You chose that, but it's
-Python's job to remember it.
+你選擇了這個名字，Python 的任務是記住它
 
 76
 00:03:29,013 --> 00:03:32,962
-So this says, whatever that
-x is, there's a two in there.
+因此，不論 x 是什麼名字，都有一個 2 在那裏
 
 77
 00:03:32,962 --> 00:03:36,267
-Now pull that x back out, add two to it,
+現在將這個 x 取出來，並給它的值加 2
 
 78
 00:03:36,267 --> 00:03:38,218
-which makes it four,
-and stick it back in x.
+它的值會變成 4，並將它賦回 x
 
 79
 00:03:38,218 --> 00:03:39,821
-So that makes this a four.
+因此，這使其成爲 4
 
 80
 00:03:39,821 --> 00:03:41,093
-So x is a four.
+因此，x 的值是 4
 
 81
 00:03:41,093 --> 00:03:44,174
-Print(x) says go look up that thing
+Print(x) 意思是找到一些東西並打印它
 
 82
 00:03:44,174 --> 00:03:46,098
-that was an x and print it out.
+在這是 x
 
 83
 00:03:46,098 --> 00:03:49,244
-So these are like each
-line has something to it.
+所以，像每行代碼都做了些事情
 
 84
 00:03:49,244 --> 00:03:51,105
-I'm using a reserved word, well, actually
+我使用了一個保留字，其實
 
 85
 00:03:51,105 --> 00:03:55,188
-that's a function, but
-it's a reserved word, too.
+這是一個函數，但也是一個保留字
 
 86
 00:03:56,522 --> 00:03:58,472
-There's reserved words
-and all these things
+這些保留字和所有這些內容
 
 87
 00:03:58,472 --> 00:03:59,442
-and you combine these.
+把它們組合起來
 
 88
 00:03:59,442 --> 00:04:02,340
-There are operators, plus is an operator,
+還有運算符，加號就是一個運算符
 
 89
 00:04:02,340 --> 00:04:03,475
-equals is an operator.
+等號也是一個運算符
 
 90
 00:04:03,475 --> 00:04:05,027
-These things do things,
+所有這些都有它們的作用
 
 91
 00:04:05,027 --> 00:04:07,330
-and we'll learn all this stuff in time.
+我們接下來就會學習它們
 
 92
 00:04:07,330 --> 00:04:11,330
-So the basic building
-blocks of lines of Python.
+Python 每行代碼的基本組成單元
 
 93
 00:04:13,508 --> 00:04:15,508
-As we take these lines of
-Python and build them up,
+當我們拿到 Python 的這些代碼行並構建它們時
 
 94
 00:04:15,508 --> 00:04:17,082
-we end up making paragraphs.
+我們最終要把它們弄成段落
 
 95
 00:04:17,082 --> 00:04:20,038
-Programming in paragraphs.
+程序中的段落
 
 96
 00:04:20,038 --> 00:04:22,974
-One of the things that's
-important is I showed you
+其中一個重要的事情就是我已經向你們展示過的
 
 97
 00:04:22,974 --> 00:04:25,768
-how to do interactive Python,
-so you just type Python,
+怎樣進入 Python 交互式窗口，只需要輸入 python
 
 98
 00:04:25,768 --> 00:04:28,784
-and you type a statement, and
-a statement, and a statement.
+然後輸入一個語句，接着一個語句，接着一個語句
 
 99
 00:04:28,784 --> 00:04:31,143
-Those get really tiring after
-about three or four lines
+在輸入大約三行或四行 Python 後，有些人會覺得很疲憊
 
 100
 00:04:31,143 --> 00:04:33,741
-of Python because you
-start making mistakes,
+因爲你開始犯錯誤
 
 101
 00:04:33,741 --> 00:04:35,237
